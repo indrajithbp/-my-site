@@ -1,0 +1,22 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "frame-src 'self' https://open.spotify.com https://*.spotify.com; frame-ancestors 'self';"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "autoplay=(self https://open.spotify.com), encrypted-media=(self https://open.spotify.com), fullscreen=(self https://open.spotify.com)"
+        }
+      ]
+    }
+  ]
+}
